@@ -67,11 +67,11 @@
     <Compile Include="Assets\Liminal\MyExperienceApp.cs" />
     <Compile Include="Assets\Scripts\ClickableButton.cs" />
     <Compile Include="Assets\Scripts\Colorizer.cs" />
-    <Compile Include="Assets\Scripts\Fade.cs" />
     <Compile Include="Assets\Scripts\LimitedPartSpawner.cs" />
     <Compile Include="Assets\Scripts\Marker.cs" />
     <Compile Include="Assets\Scripts\PartSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayPauseController.cs" />
+    <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\RandomColorizer.cs" />
     <Compile Include="Assets\Scripts\ResetBridge.cs" />
     <Compile Include="Assets\Scripts\SelfDestruct.cs" />

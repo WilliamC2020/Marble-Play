@@ -15,28 +15,22 @@ public class PlayPauseController : MonoBehaviour
     public GameObject congratsBox;
     public GameObject nextPuzzle;
     public GameObject thisPuzzle;
-   
+    public List<GameObject> puzzles;
+    public int levelCount;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("FillLists");
         StartCoroutine("ResetState");
-        nextPuzzle = GameObject.FindObjectOfType<Win>().nextPuzzle;
-        thisPuzzle = GameObject.FindObjectOfType<Win>().thisPuzzle;
- 
+        int levelCount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (nextPuzzle == null || thisPuzzle == null)
-        {
-            nextPuzzle = GameObject.FindObjectOfType<Win>().nextPuzzle;
-            thisPuzzle = GameObject.FindObjectOfType<Win>().thisPuzzle;
-        }
-        Debug.Log(nextPuzzle = GameObject.FindObjectOfType<Win>().nextPuzzle);
-        Debug.Log(thisPuzzle = GameObject.FindObjectOfType<Win>().thisPuzzle);
+        
+        
 
         if (reloadLists == true)
         {
@@ -103,29 +97,27 @@ public class PlayPauseController : MonoBehaviour
     public IEnumerator ShowCongratsBox()
     {
         congratsBox.SetActive(true);
-
+        yield return new WaitForSeconds(5);
         congratsBox.SetActive(false);
         
        
-            var kill = GameObject.FindObjectsOfType<SelfDestruct>();
-            for (int i = 0; i < kill.Length; i++)
-            {
-               doomedGameObjects.Add(kill[i]);
-             }
+        var kill = GameObject.FindObjectsOfType<SelfDestruct>();
+        for (int i = 0; i < kill.Length; i++)
+        {
+            doomedGameObjects.Add(kill[i]);
+        }
 
-            foreach (var item in doomedGameObjects)
-            {
-                item.SendMessage("Terminate");
-            }
-            reloadLists = true;
-            nextPuzzle.SetActive(true);            
-            
-            thisPuzzle.SetActive(false);
-            SendMessage("EnterResetState");
-            nextPuzzle = GameObject.FindObjectOfType<Win>().nextPuzzle;
-            thisPuzzle = GameObject.FindObjectOfType<Win>().thisPuzzle;
+        foreach (var item in doomedGameObjects)
+        {
+            item.SendMessage("Terminate");
+        }
 
-       
+        reloadLists = true;
+        puzzles[levelCount].SetActive(false);
+        levelCount += 1;
+        SendMessage("EnterResetState");
+        puzzles[levelCount].SetActive(true);
+
 
 
 

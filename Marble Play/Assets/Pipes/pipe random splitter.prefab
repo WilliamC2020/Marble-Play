@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1617425817679938941}
   - component: {fileID: -6179464045644478647}
   - component: {fileID: 7885847299094317255}
-  - component: {fileID: -3649492479164980129}
   m_Layer: 0
   m_Name: pipe random splitter
   m_TagString: Untagged
@@ -110,17 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-3649492479164980129
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5445918085610142725}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &5967915703495312279
 GameObject:
   m_ObjectHideFlags: 0

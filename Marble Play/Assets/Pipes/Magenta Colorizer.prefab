@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: 5536118404828247958}
   - component: {fileID: -237807410197889500}
   - component: {fileID: 355458812457084929}
-  - component: {fileID: -1696793945325389981}
   m_Layer: 0
   m_Name: Magenta Colorizer
   m_TagString: Untagged
@@ -233,17 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-1696793945325389981
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3602223307008441643}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &3887642656123604605
 GameObject:
   m_ObjectHideFlags: 0

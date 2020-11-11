@@ -29,8 +29,10 @@ public class VRDraggable : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public rotateType currentRotateType;
 
-
-  
+    public void Start()
+    {
+       
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {

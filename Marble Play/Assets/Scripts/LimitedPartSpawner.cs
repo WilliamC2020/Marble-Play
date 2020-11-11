@@ -16,6 +16,7 @@ public class LimitedPartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUp
     
     public void Start()
     {
+        
         newPartSpawned = false;
     }
 
@@ -59,7 +60,8 @@ public class LimitedPartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUp
 
             // set the child's controller to match its parent
             vr.controller = controller;
-
+            vr.rot = gameObject.transform.rotation.eulerAngles.z;
+            Debug.Log(gameObject.transform.rotation.z);
             //set its tag so it is rendered immovable
             vr.gameObject.tag = "Lock@SimStart";
             partsInInventory = partsInInventory - 1;

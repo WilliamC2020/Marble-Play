@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4870594833636949218}
   - component: {fileID: 1556723384453220720}
   - component: {fileID: 8645354808502231551}
-  - component: {fileID: 3054775502454890525}
   m_Layer: 0
   m_Name: pipe 90' corner
   m_TagString: Untagged
@@ -112,17 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &3054775502454890525
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542375952720826009}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &7828913739371265487
 GameObject:
   m_ObjectHideFlags: 0

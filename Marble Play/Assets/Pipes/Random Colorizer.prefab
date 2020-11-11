@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: -4188888532216285551}
   - component: {fileID: -6795629503173262101}
   - component: {fileID: -7926367608282254695}
-  - component: {fileID: -7414893172443136336}
   m_Layer: 0
   m_Name: Random Colorizer
   m_TagString: Untagged
@@ -241,17 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-7414893172443136336
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3573366848450574554}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &3862156988833336204
 GameObject:
   m_ObjectHideFlags: 0

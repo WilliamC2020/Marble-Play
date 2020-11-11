@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5072760566537615930}
   - component: {fileID: -5519316577030783833}
   - component: {fileID: -5893881124090524370}
-  - component: {fileID: -3863880552240635632}
   m_Layer: 8
   m_Name: Green Marble
   m_TagString: Untagged
@@ -111,7 +110,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &6779957943054459997
 MonoBehaviour:
@@ -173,14 +172,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-3863880552240635632
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163499447114760526}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1

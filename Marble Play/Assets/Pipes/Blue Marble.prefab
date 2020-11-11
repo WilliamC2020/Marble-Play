@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 540553118574657886}
   - component: {fileID: -370449397026332745}
   - component: {fileID: -183475836840036277}
-  - component: {fileID: 9202133484622323714}
   m_Layer: 8
   m_Name: Blue Marble
   m_TagString: Untagged
@@ -111,7 +110,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &7277413204118470781
 MonoBehaviour:
@@ -173,14 +172,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &9202133484622323714
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3083905293856466286}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1

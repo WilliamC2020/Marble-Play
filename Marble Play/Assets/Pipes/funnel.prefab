@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 2086448641263262646}
   - component: {fileID: 1094779701225568853}
   - component: {fileID: 3652287418088670940}
-  - component: {fileID: -2469170452927309593}
   m_Layer: 0
   m_Name: funnel
   m_TagString: Untagged
@@ -281,17 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-2469170452927309593
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4461395697170530609}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &5661790223347188250
 GameObject:
   m_ObjectHideFlags: 0

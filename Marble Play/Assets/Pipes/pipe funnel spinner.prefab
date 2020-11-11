@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -1293763247374370318}
   - component: {fileID: -917681157695189012}
   - component: {fileID: 1680946021578655791}
-  - component: {fileID: -59584322884115736}
   m_Layer: 0
   m_Name: pipe funnel spinner
   m_TagString: Untagged
@@ -111,17 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-59584322884115736
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4473839052079679245}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &8272634141510181224
 GameObject:
   m_ObjectHideFlags: 0

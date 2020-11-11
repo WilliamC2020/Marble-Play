@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -8733374425611553614}
   - component: {fileID: 5185020860240285898}
   - component: {fileID: -1790654658763910877}
-  - component: {fileID: 3358254527123145058}
   m_Layer: 0
   m_Name: pipe flask
   m_TagString: Untagged
@@ -110,17 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &3358254527123145058
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5984953015895239182}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &7588685835444821564
 GameObject:
   m_ObjectHideFlags: 0

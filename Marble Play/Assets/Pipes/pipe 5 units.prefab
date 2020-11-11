@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 5313711161887474431}
   - component: {fileID: -5288705191216568675}
   - component: {fileID: -7599689859464354198}
-  - component: {fileID: 4414836133356764365}
   m_Layer: 0
   m_Name: pipe 5 units
   m_TagString: Untagged
@@ -281,17 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &4414836133356764365
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7593350263459076110}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
 --- !u!1 &7885515646839122776
 GameObject:
   m_ObjectHideFlags: 0

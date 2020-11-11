@@ -10,13 +10,17 @@ public class PlayPauseController : MonoBehaviour
     public List<GameObject> staticGameObjects;
     public List<GameObject> moveableGameObjects;
     public List<GameObject> partSpawners;
+    public List<GameObject> puzzles;
     public bool playing; 
     public bool reloadLists = false;
     public GameObject congratsBox;
-    public GameObject nextPuzzle;
-    public GameObject thisPuzzle;
-    public List<GameObject> puzzles;
+    public GameObject PlayButton;
+    
+    
+
+   
     public int levelCount;
+
 
     // Start is called before the first frame update
     void Start()
@@ -66,11 +70,11 @@ public class PlayPauseController : MonoBehaviour
         StartCoroutine("PlayState");
     }
 
-    public void EnterPauseState()
-    {
-        playing = false;
-        StartCoroutine("PauseState");
-    }
+  //  public void EnterPauseState()
+  //  {
+   //     playing = false;
+  //      StartCoroutine("PauseState");
+  //  }
 
     public void EnterResetState()
     {
@@ -149,6 +153,7 @@ public class PlayPauseController : MonoBehaviour
 
     public IEnumerator PlayState()
     {
+        PlayButton.GetComponent<ClickableButton>().enabled = false;
         //unlock any gameObjects with rigidbodies
         //lock VRDraggable components
         foreach (var item in moveableGameObjects)
@@ -171,34 +176,36 @@ public class PlayPauseController : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator PauseState()
-    {
+   // public IEnumerator PauseState()
+    //{
         //lock rigidbodies 
         //do not unlock VRDraggable components
-        foreach (var item in moveableGameObjects)
-        {
+       // foreach (var item in moveableGameObjects)
+      //  {
             
-            if (item.GetComponent<Rigidbody>() == true)
-            {
-                item.GetComponent<Rigidbody>().isKinematic = true;
-            }
+           // if (item.GetComponent<Rigidbody>() == true)
+       //     {
+             //   item.GetComponent<Rigidbody>().isKinematic = true;
+       //     }
 
-        }
+    //    }
 
-        foreach (var item in staticGameObjects)
-        {
+      //  foreach (var item in staticGameObjects)
+      //  {
            
-            if (item.GetComponent<Rigidbody>() == true)
-            {
-                item.GetComponent<Rigidbody>().isKinematic = true;
-            }
+      //      if (item.GetComponent<Rigidbody>() == true)
+     //       {
+         //       item.GetComponent<Rigidbody>().isKinematic = true;
+      //      }
 
-        }
-        yield return null;
-    }
+      //  }
+    //    yield return null;
+   // }
 
     public IEnumerator ResetState()
     {
+        PlayButton.GetComponent<ClickableButton>().enabled = true;
+
         //lock rigidbodies
         //unlock VRDraggable components
         foreach (var item in moveableGameObjects)

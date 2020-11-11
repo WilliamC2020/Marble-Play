@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 2611598307382951858}
   - component: {fileID: 2611598307382951861}
   - component: {fileID: 2611598307382951860}
-  - component: {fileID: 8791418525768506270}
   - component: {fileID: -2827091617285440011}
   - component: {fileID: 4650049418922675638}
-  - component: {fileID: -983727532156248218}
+  - component: {fileID: 8991464507653506708}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -91,7 +90,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2611598307382951863}
   m_Material: {fileID: 13400000, guid: 02cbf2d840b36eb48ab1ff45afbb59cc, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -116,21 +115,6 @@ MonoBehaviour:
   rot: 0
   flipRotateAxis: 0
   currentRotateType: 0
---- !u!114 &8791418525768506270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2611598307382951863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3473893ae968b6a48a76987b7da2ebf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolTipText: Mirror. A flat block that deflects marbles that hit it.
-  toolTipDisplayText: {fileID: 0}
-  parentPartSpawner: {fileID: 0}
 --- !u!114 &-2827091617285440011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,14 +140,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-983727532156248218
-SortingGroup:
+--- !u!114 &8991464507653506708
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2611598307382951863}
   m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3473893ae968b6a48a76987b7da2ebf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolTipText: Mirror. A flat block that deflects marbles that hit it.
+  toolTipDisplayText: {fileID: 0}
+  parentPartSpawner: {fileID: 0}

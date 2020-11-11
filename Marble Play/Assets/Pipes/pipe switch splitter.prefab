@@ -491,7 +491,6 @@ GameObject:
   - component: {fileID: 51285585930032466}
   - component: {fileID: 7198394175931873558}
   - component: {fileID: 8627296591409607898}
-  - component: {fileID: -1759688995622931968}
   m_Layer: 0
   m_Name: pipe switch splitter
   m_TagString: Untagged
@@ -588,14 +587,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-1759688995622931968
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8765635358380542012}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1

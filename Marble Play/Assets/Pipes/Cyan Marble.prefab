@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 1869330148962864827}
   - component: {fileID: -5737130461302372715}
   - component: {fileID: 3545171483301600214}
-  - component: {fileID: -6576587108514953321}
   m_Layer: 8
   m_Name: Cyan Marble
   m_TagString: Untagged
@@ -111,7 +110,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &773831044385268787
 MonoBehaviour:
@@ -173,14 +172,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &-6576587108514953321
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940334969738887456}
-  m_Enabled: 1
-  m_SortingLayerID: 80539117
-  m_SortingLayer: 1
-  m_SortingOrder: 1

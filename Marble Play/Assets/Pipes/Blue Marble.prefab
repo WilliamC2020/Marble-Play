@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 540553118574657886}
   - component: {fileID: -370449397026332745}
   - component: {fileID: -183475836840036277}
+  - component: {fileID: 2481258758893774970}
   m_Layer: 8
   m_Name: Blue Marble
   m_TagString: Untagged
@@ -172,3 +173,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2481258758893774970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083905293856466286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01809fe45bdf47a439a195733d548d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rolling: {fileID: 8300000, guid: 7d62e46256f7f284db9822b26aaf667a, type: 3}
+  impact: {fileID: 8300000, guid: 96694d0f9544dbc48a11f11d222a2376, type: 3}
+  audioOutput: {fileID: 0}
+  isRolling: 0

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5072760566537615930}
   - component: {fileID: -5519316577030783833}
   - component: {fileID: -5893881124090524370}
+  - component: {fileID: -5044983139188657852}
   m_Layer: 8
   m_Name: Green Marble
   m_TagString: Untagged
@@ -172,3 +173,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08fdd7c4bfc21e4891434f5ec24bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5044983139188657852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163499447114760526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01809fe45bdf47a439a195733d548d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rolling: {fileID: 8300000, guid: 7d62e46256f7f284db9822b26aaf667a, type: 3}
+  impact: {fileID: 8300000, guid: 96694d0f9544dbc48a11f11d222a2376, type: 3}
+  audioOutput: {fileID: 0}
+  isRolling: 0

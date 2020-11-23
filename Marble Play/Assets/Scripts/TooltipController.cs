@@ -8,29 +8,24 @@ public class TooltipController : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public string toolTipText;
     public TextMeshProUGUI toolTipDisplayText;
     public GameObject parentPartSpawner;
-    int oldInvNum;
-    int newInvNum;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        oldInvNum = parentPartSpawner.GetComponent<LimitedPartSpawner>().partsInInventory;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        newInvNum = parentPartSpawner.GetComponent<LimitedPartSpawner>().partsInInventory;
-        if (newInvNum != oldInvNum)
-        {
-           toolTipDisplayText.text = toolTipText + " Parts in inventory: " + parentPartSpawner.GetComponent<LimitedPartSpawner>().partsInInventory;
-           oldInvNum = newInvNum;
-        }
+        
          
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        toolTipDisplayText.text = toolTipText + " Parts in inventory: " + parentPartSpawner.GetComponent<LimitedPartSpawner>().partsInInventory;
+        toolTipDisplayText.text = toolTipText;
         Debug.Log("display tip");
     }
 

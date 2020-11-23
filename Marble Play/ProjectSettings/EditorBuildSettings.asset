@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/MainScenePainRelief.unity
+    path: Assets/Scenes/MainScenePainRelief.unity
     guid: a2b7a8b97bffafc44af1d9476b1eab2c
-  - enabled: 0
-    path: Assets/MainScenePainReliefLimitedInventory.unity
-    guid: 096df50ff103eca449a5fc61a3b2653f
   - enabled: 1
-    path: Assets/MainScenePainReliefRiley.unity
-    guid: bfd1f08f1db867e488885c39f9080960
+    path: Assets/Scenes/MainScenePainReliefLimitedInventory.unity
+    guid: 096df50ff103eca449a5fc61a3b2653f
   m_configObjects: {}

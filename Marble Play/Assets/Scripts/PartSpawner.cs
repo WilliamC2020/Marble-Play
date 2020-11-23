@@ -11,10 +11,13 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public VRDraggable objectToSpawn;
     public TextMeshProUGUI toolTipDisplayText;
     public Vector3 spawnPosition;
-
-    public void Start()
+    public bool newPartSpawned;
+    public AudioClip createPart;
+    public AudioSource audioOutput;
+    void Start()
     {
-        
+        audioOutput = FindObjectOfType<AudioSource>();
+        audioOutput.clip = createPart;
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -22,7 +25,9 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Debug.Log("pointer down");
         pointerDown = true;
         StartCoroutine("Spawn");
-        
+        audioOutput.Stop();
+        audioOutput.Play();
+
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -39,12 +44,14 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         
         if (pointerDown == true)
         {
-            VRDraggable vr = Instantiate(objectToSpawn, spawnPosition, transform.rotation);
+            VRDraggable vr = Instantiate(objectToSpawn, spawnPosition, transform.localRotation);
             vr.gameObject.GetComponent<TooltipController>().toolTipDisplayText = toolTipDisplayText;
-            vr.gameObject.GetComponent<TooltipController>().toolTipText = gameObject.GetComponent<TooltipController>().toolTipText;
-            vr.gameObject.tag = "Lock@SimStart";
+            vr.gameObject.GetComponent<TooltipController>().toolTipText = gameObject.GetComponent<SpawnerTooltipController>().toolTipText;
+            vr.gameObject.GetComponent<TooltipController>().parentPartSpawner = gameObject;
             vr.controller = controller;
-            
+            vr.rot = gameObject.transform.rotation.eulerAngles.z;
+            vr.gameObject.tag = "Lock@SimStart";
+            newPartSpawned = true;
         }
 
         if (pointerDown == false)

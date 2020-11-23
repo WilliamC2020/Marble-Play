@@ -7,26 +7,23 @@ public class SpawnerTooltipController : MonoBehaviour, IPointerEnterHandler, IPo
 {
     public string toolTipText;
     public TextMeshProUGUI toolTipDisplayText;
-    LimitedPartSpawner spawn;
+    
+    PartSpawner spawn;
     int oldInvNum;
     int newInvNum;
+
     // Start is called before the first frame update
     void Start()
     {
-         spawn = GetComponent<LimitedPartSpawner>();
-         oldInvNum = spawn.partsInInventory;
+         spawn = GetComponent<PartSpawner>();
+        
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        newInvNum = spawn.partsInInventory;
-        if (newInvNum != oldInvNum)
-        {
-            toolTipDisplayText.text = toolTipText + " Parts in inventory: " + spawn.partsInInventory;
-            oldInvNum = newInvNum;
-        }
+       
 
     }
 
@@ -34,7 +31,7 @@ public class SpawnerTooltipController : MonoBehaviour, IPointerEnterHandler, IPo
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        toolTipDisplayText.text = toolTipText + " Parts in inventory: " + spawn.partsInInventory;
+        toolTipDisplayText.text = toolTipText;
         Debug.Log("display tip");
     }
 

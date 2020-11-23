@@ -8,7 +8,8 @@ public class MarbleAudio : MonoBehaviour
     public AudioClip impact;
     public AudioSource audioOutput;
     public bool isRolling;
-    
+    public int playing;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,8 @@ public class MarbleAudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.GetComponent<Rigidbody>().velocity);
-        if (isRolling == true && audioOutput.isPlaying == false)
+        /*
+        if (isRolling == true && audioOutput.isPlaying == false && gameObject.GetComponent<Rigidbody>().velocity.magnitude > 10)
         {
             
             
@@ -31,7 +32,8 @@ public class MarbleAudio : MonoBehaviour
                 audioOutput.Play();
             
         
-        } 
+        } */
+        Debug.Log(playing);
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -40,9 +42,7 @@ public class MarbleAudio : MonoBehaviour
        
         audioOutput.loop = false;
         Debug.Log("bam");
-        audioOutput.clip = impact;
-        audioOutput.Play();
-        
+        StartCoroutine("Play");
     }
 
     public void OnCollisionStay(Collision collision)
@@ -55,10 +55,16 @@ public class MarbleAudio : MonoBehaviour
     public void OnCollisionExit(Collision collision)
     {
         isRolling = false; 
-        audioOutput.Stop();
+        
         Debug.Log("silent");
     }
-
+     public IEnumerator Play()
+    {
+        playing += 1;
+        audioOutput.PlayOneShot(impact);
+        yield return new WaitForSeconds(impact.length);
+        playing -= 1;
+    }
 
 }
 

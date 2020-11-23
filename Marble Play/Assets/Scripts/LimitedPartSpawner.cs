@@ -46,23 +46,13 @@ public class LimitedPartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUp
         //if pointer held down & number of available parts greater than 0
         if (pointerDown == true && partsInInventory > 0)
         {
-            //instantiate new part at specified location & parent part spawner's rotation
-            VRDraggable vr = Instantiate(objectToSpawn, spawnPosition, transform.rotation);
-
-            //set the text object the child uses to display tooltips
+            
+            VRDraggable vr = Instantiate(objectToSpawn, spawnPosition, transform.localRotation);
             vr.gameObject.GetComponent<TooltipController>().toolTipDisplayText = toolTipDisplayText;
-
-            //set the tootip text of the child to match its parent
             vr.gameObject.GetComponent<TooltipController>().toolTipText = gameObject.GetComponent<SpawnerTooltipController>().toolTipText;
-
-            //tell the child that this is its parent
             vr.gameObject.GetComponent<TooltipController>().parentPartSpawner = gameObject;
-
-            // set the child's controller to match its parent
             vr.controller = controller;
             vr.rot = gameObject.transform.rotation.eulerAngles.z;
-            Debug.Log(gameObject.transform.rotation.z);
-            //set its tag so it is rendered immovable
             vr.gameObject.tag = "Lock@SimStart";
             partsInInventory = partsInInventory - 1;
             

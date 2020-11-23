@@ -5,7 +5,7 @@ using UnityEngine;
 public class Colorizer : MonoBehaviour
 {
     public Material recolorMaterial;
-  
+    public AudioClip note;
     void OnTriggerEnter(Collider other)
     {
         var rend = other.gameObject.GetComponent<MeshRenderer>();
@@ -17,5 +17,6 @@ public class Colorizer : MonoBehaviour
         {
             //space for rent
         }
+        other.gameObject.GetComponent<MarbleAudio>().impact = note;
     }
 }

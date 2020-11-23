@@ -111,7 +111,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &-7476657344997563015
 MonoBehaviour:
@@ -186,6 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rolling: {fileID: 8300000, guid: 7d62e46256f7f284db9822b26aaf667a, type: 3}
-  impact: {fileID: 8300000, guid: 96694d0f9544dbc48a11f11d222a2376, type: 3}
+  impact: {fileID: 8300000, guid: 447da9344d3b9f549bdaf74ea94fddb9, type: 3}
   audioOutput: {fileID: 0}
   isRolling: 0

@@ -1,4 +1,0 @@
-#Thu Nov 19 09:31:04 AEDT 2020
-base.0=C\:\\Users\\Me\\Documents\\GitHub\\Marble-Play\\Marble Play\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex

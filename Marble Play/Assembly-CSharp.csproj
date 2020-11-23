@@ -64,11 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Liminal\MyExperienceApp.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\ClickableButton.cs" />
     <Compile Include="Assets\Scripts\Colorizer.cs" />
+    <Compile Include="Assets\Scripts\ForceZone.cs" />
     <Compile Include="Assets\Scripts\LimitedPartSpawner.cs" />
     <Compile Include="Assets\Scripts\MarbleAudio.cs" />
-    <Compile Include="Assets\Scripts\Marker.cs" />
     <Compile Include="Assets\Scripts\PartSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayPauseController.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
@@ -80,7 +81,6 @@
     <Compile Include="Assets\Scripts\TooltipController.cs" />
     <Compile Include="Assets\Scripts\TransformReset.cs" />
     <Compile Include="Assets\Scripts\VRDraggable.cs" />
-    <Compile Include="Assets\Scripts\Win.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

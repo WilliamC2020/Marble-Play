@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainScenePainRelief.unity
     guid: a2b7a8b97bffafc44af1d9476b1eab2c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScenePainReliefLimitedInventory.unity
     guid: 096df50ff103eca449a5fc61a3b2653f
+  - enabled: 1
+    path: Assets/Scenes/MainSceneCalm.unity
+    guid: 1651b4d7d978a1f4caa5c10aacf8a7a7
   m_configObjects: {}

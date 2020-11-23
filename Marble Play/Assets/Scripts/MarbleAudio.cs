@@ -38,11 +38,15 @@ public class MarbleAudio : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        isRolling = false;
+        if (collision.gameObject.layer != 10)
+        {
+            isRolling = false;
        
-        audioOutput.loop = false;
-        Debug.Log("bam");
-        StartCoroutine("Play");
+            audioOutput.loop = false;
+            Debug.Log("bam");
+            StartCoroutine("Play");
+        }
+        
     }
 
     public void OnCollisionStay(Collision collision)

@@ -6,29 +6,23 @@ using TMPro;
 
 public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public bool pointerDown;
-    public GameObject controller;
-    public VRDraggable objectToSpawn;
-    public TextMeshProUGUI toolTipDisplayText;
-    public Vector3 spawnPosition;
-    public bool newPartSpawned;
-    public AudioClip createPart;
-    public AudioSource audioOutput;
-    public PlayPauseController playPauseController; 
+    public bool pointerDown; // Bool variable that checks if the pointer is being held down.
+    public bool newPartSpawned; // Bool variable that checks if a new part has been spawned.
+    public GameObject controller; // The controller object on the VRAvatar - the pointer position is extracted from this.
+    public VRDraggable objectToSpawn; // The part that this spawner creates.
+    public TextMeshProUGUI toolTipDisplayText; // The tooltip to display when hovering over the part to be spawned.
+    public Vector3 spawnPosition; // The location to spawn the new part.
+    public AudioClip createPart; // Audio clip to play when a part is spawned.
+    public AudioSource audioOutput; // The audio source to play the createPart clip through.
+    public int[] xRange = new int[2]; // Two-item array of int variables specifying the possible range of x positions for a new part.
+    public int[] yRange = new int[2]; // Two-item array of int variables specifying the possible range of y positions for a new part .
+    public float partSize; //The size of the spherecast used to detect if the location for the part is already occupied
 
-    [Tooltip("The range of x values a new part can spawn at !!WARNING!! Ensure that the range values are large enough to allow parts enough space to spawn - failure to do so will cause a infinite loop on spawning 2 parts!!!")]
-    public int[] xRange = new int[2];
-
-    [Tooltip("The range of y values a new part can spawn at !!WARNING!! Ensure that the range values are large enough to allow parts enough space to spawn - failure to do so will cause a infinite loop on spawning 2 parts!!!")]
-    public int[] yRange = new int[2];
-    
-    [Tooltip(" The size of the spherecast check used to detemine where to place parts ")]
-    public float partSize;
     void Start()
     {
          
-        audioOutput = FindObjectOfType<AudioSource>();
-        audioOutput.clip = createPart;
+        audioOutput = FindObjectOfType<AudioSource>(); // find the AudioSource to use
+        audioOutput.clip = createPart; // set the AudioSource's clip to the clip in createPart
     }
 
     public void OnPointerDown(PointerEventData eventData)

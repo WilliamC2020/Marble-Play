@@ -54,7 +54,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   xy: {x: 0, y: 0, z: 0}
   rot: 0
-  flipRotateAxis: 0
+  flipRotateAxis: 1
   currentRotateType: 0
 --- !u!65 &-9038175972007773590
 BoxCollider:
@@ -213,7 +213,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e922e2aa291fbbe4d9c7ac53ea9bdbb6, type: 2}
+  - {fileID: 2100000, guid: dcd2df3846e131745a485775e1e211c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,7 +412,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 090c5d11fd3681e41970e0b9761d8652, type: 2}
+  - {fileID: 2100000, guid: 1fe115513a9f12f489001cdc518c9f30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

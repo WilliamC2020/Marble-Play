@@ -176,6 +176,7 @@ Transform:
   - {fileID: 1090849936}
   - {fileID: 832539723}
   - {fileID: 953306900}
+  - {fileID: 113928631}
   - {fileID: 401187707}
   m_Father: {fileID: 88544950}
   m_RootOrder: 1
@@ -455,6 +456,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24632321}
   m_CullTransparentMesh: 0
+--- !u!1 &30695864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30695865}
+  - component: {fileID: 30695866}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &30695865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30695864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30695866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30695864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d03f3c7ef24de47977c65654f3e859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerDown: 0
+  controller: {fileID: 0}
+  objectToSpawn: {fileID: 0}
+  toolTipDisplayText: {fileID: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  newPartSpawned: 0
+  createPart: {fileID: 0}
+  audioOutput: {fileID: 0}
+  playPauseController: {fileID: 0}
+  xRange: 000000000a000000
+  yRange: 000000000a000000
+  partSize: 1
 --- !u!1001 &42412782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,10 +670,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 4f10ef18b064cc4429f44269e23f7110,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &70461850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 4f10ef18b064cc4429f44269e23f7110,
@@ -826,6 +886,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &95643424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3247606907448097354, guid: 851aeb27042fd6243b68e909fc141dab,
+    type: 3}
+  m_PrefabInstance: {fileID: 113928630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &95643425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95643424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d03f3c7ef24de47977c65654f3e859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerDown: 0
+  controller: {fileID: 478521847}
+  objectToSpawn: {fileID: 8644271412380584393, guid: 851aeb27042fd6243b68e909fc141dab,
+    type: 3}
+  toolTipDisplayText: {fileID: 1774682249}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  newPartSpawned: 0
+  createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
+  audioOutput: {fileID: 1794690175}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
+--- !u!114 &95643426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95643424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fcc0cec27967a4fb0610b0d3e4c480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolTipText: 
+  toolTipDisplayText: {fileID: 0}
 --- !u!1001 &111790452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -947,6 +1052,109 @@ PrefabInstance:
     - {fileID: -7307795654496393057, guid: 46b8d489b6a9f214b884c13a23b17118, type: 3}
     - {fileID: -6575444659008673571, guid: 46b8d489b6a9f214b884c13a23b17118, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 46b8d489b6a9f214b884c13a23b17118, type: 3}
+--- !u!1001 &113928630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 13752252}
+    m_Modifications:
+    - target: {fileID: 3247606907448097354, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_Name
+      value: pipe spinner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45.140793
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.650051
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.55239
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112402277707378060, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.00000041723257
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112402277707378060, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.012499809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112402277317988379, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1fe115513a9f12f489001cdc518c9f30, type: 2}
+    - target: {fileID: 8112402278021571839, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8801981
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112402278021571839, guid: 851aeb27042fd6243b68e909fc141dab,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2852527
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -1226663215858761361, guid: 851aeb27042fd6243b68e909fc141dab, type: 3}
+    - {fileID: -508853696274442979, guid: 851aeb27042fd6243b68e909fc141dab, type: 3}
+    - {fileID: -2706947003182538783, guid: 851aeb27042fd6243b68e909fc141dab, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 851aeb27042fd6243b68e909fc141dab, type: 3}
+--- !u!4 &113928631 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5458173975885276847, guid: 851aeb27042fd6243b68e909fc141dab,
+    type: 3}
+  m_PrefabInstance: {fileID: 113928630}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &131336352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1034,7 +1242,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &131336353 stripped
 Transform:
@@ -1460,7 +1672,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3652287418088670940, guid: c18fd1b99d8c35f4c9ca7c55408f1063, type: 3}
+    - {fileID: 1094779701225568853, guid: c18fd1b99d8c35f4c9ca7c55408f1063, type: 3}
+    - {fileID: 2086448641263262646, guid: c18fd1b99d8c35f4c9ca7c55408f1063, type: 3}
+    - {fileID: 5505215467038677713, guid: c18fd1b99d8c35f4c9ca7c55408f1063, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c18fd1b99d8c35f4c9ca7c55408f1063, type: 3}
 --- !u!1001 &216290281
 PrefabInstance:
@@ -1796,10 +2012,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 6615651929180852463, guid: 3e660667c21d88f479d3d06c53bb825d,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &278641264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1584474484797683195, guid: 3e660667c21d88f479d3d06c53bb825d,
@@ -2233,10 +2453,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 6779957943054459997, guid: c780a1e26c749c84cb845b2dcf153937,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &360785039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1163499447114760521, guid: c780a1e26c749c84cb845b2dcf153937,
@@ -2281,10 +2505,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 46b8d489b6a9f214b884c13a23b17118,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &366514177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 46b8d489b6a9f214b884c13a23b17118,
@@ -2328,10 +2556,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 7003595969384970330, guid: edb4712c8e9114d4e9333a20d4c4d7fd,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &384046721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3387672478023589198, guid: edb4712c8e9114d4e9333a20d4c4d7fd,
@@ -2493,10 +2725,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 7037211489121498212, guid: 331885e873226c94fa6ba1385e7e19e6,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &389099494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4696786329691094222, guid: 331885e873226c94fa6ba1385e7e19e6,
@@ -2639,10 +2875,10 @@ Transform:
   m_GameObject: {fileID: 401187706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -58.67826, y: 11.120113, z: 18.427872}
-  m_LocalScale: {x: 40, y: 57, z: 1}
+  m_LocalScale: {x: 43.04, y: 57, z: 1}
   m_Children: []
   m_Father: {fileID: 13752252}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &401187708
 MeshRenderer:
@@ -2727,10 +2963,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 894414359609086370, guid: 2f0094ea355d3784685f24ab1f712045,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &444741765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 561964721102342857, guid: 2f0094ea355d3784685f24ab1f712045,
@@ -2774,10 +3014,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 773831044385268787, guid: 6256781e9baa3ec4198d938adf2cb5ce,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &448197136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940334969738887463, guid: 6256781e9baa3ec4198d938adf2cb5ce,
@@ -3028,7 +3272,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &472400372 stripped
 Transform:
@@ -3335,7 +3583,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &487800399 stripped
 Transform:
@@ -3430,7 +3682,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &494993691 stripped
 Transform:
@@ -4094,10 +4350,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 3639126132521536235, guid: b6dd25ca3788dca40bc47b04d4677176,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &628364665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6841178043361885322, guid: b6dd25ca3788dca40bc47b04d4677176,
@@ -4141,10 +4401,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -4360835907794811667, guid: 9a54a8e029d15904487a96713beef375,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &635041011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3447120853813121465, guid: 9a54a8e029d15904487a96713beef375,
@@ -4238,7 +4502,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8645354808502231551, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 1556723384453220720, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 4870594833636949218, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 3639126132521536235, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
 --- !u!4 &649591606 stripped
 Transform:
@@ -4375,10 +4643,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 5652108035934234172, guid: 23ca44542d9c6f54eb929b3586d7ba19,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &725522036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6581965761505226727, guid: 23ca44542d9c6f54eb929b3586d7ba19,
@@ -4422,10 +4694,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 3625083088236170734, guid: 055b14a63d6cbfa40808a203bc53108b,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &767914886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3057223951128159581, guid: 055b14a63d6cbfa40808a203bc53108b,
@@ -4519,7 +4795,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &770108486 stripped
 Transform:
@@ -4832,10 +5112,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 7277413204118470781, guid: 621241b650d7cfd4abe2d6519046e9ab,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &832539723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3083905293856466281, guid: 621241b650d7cfd4abe2d6519046e9ab,
@@ -4955,10 +5239,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 5928053824753585111, guid: a1aa75ed2bd668e4e994af5c102b60ce,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &892985201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 639805498427888600, guid: a1aa75ed2bd668e4e994af5c102b60ce,
@@ -5375,10 +5663,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: d9598c02d3205884491cfc0e4ae48595,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &953306900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: d9598c02d3205884491cfc0e4ae48595,
@@ -5422,10 +5714,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4434596543322652865, guid: ed76ceabf841bae47b76533f77dd9963,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &953390697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8338539270513288661, guid: ed76ceabf841bae47b76533f77dd9963,
@@ -5470,10 +5766,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 3c24735aa35c63b4cb5559946a922605,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1010918649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 3c24735aa35c63b4cb5559946a922605,
@@ -5961,7 +6261,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &1077437576 stripped
 Transform:
@@ -6006,10 +6310,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 3913892963119775104, guid: 2ee753eb0b033e6459c6876d6f5a52b5,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1090849936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3913892963119775111, guid: 2ee753eb0b033e6459c6876d6f5a52b5,
@@ -6399,7 +6707,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8645354808502231551, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 1556723384453220720, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 4870594833636949218, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
+    - {fileID: 3639126132521536235, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b6dd25ca3788dca40bc47b04d4677176, type: 3}
 --- !u!4 &1158529637 stripped
 Transform:
@@ -6444,10 +6756,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 5e5fd9ab98beb754faea11a04b66861a,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1182818427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 5e5fd9ab98beb754faea11a04b66861a,
@@ -6758,10 +7074,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 2611598307382951860, guid: bc8aabd61324bfd4a9bf2119e10b3199,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1254455601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2611598307382951856, guid: bc8aabd61324bfd4a9bf2119e10b3199,
@@ -7189,7 +7509,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &1306748638 stripped
 Transform:
@@ -7558,10 +7882,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 2611598307382951860, guid: bc8aabd61324bfd4a9bf2119e10b3199,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!1 &1415675016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7195103790433740042, guid: 3663ca3334f140941a1851b908e17e1e,
@@ -7599,10 +7927,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 3035848737467931992, guid: 3663ca3334f140941a1851b908e17e1e,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1415675022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6161343334117299993, guid: 3663ca3334f140941a1851b908e17e1e,
@@ -8754,10 +9086,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 8630530621760796933, guid: b62d341848bbc0240863559ddb29c1cd,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1551284127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2996084539390337500, guid: b62d341848bbc0240863559ddb29c1cd,
@@ -8851,7 +9187,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &1551289151 stripped
 Transform:
@@ -8988,10 +9328,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -7476657344997563015, guid: 707301046ca4d7d4db774250f069328c,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 28, y: 77, z: 0}
+  spawnPosition: {x: 28, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1598209842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6201237364491157613, guid: 707301046ca4d7d4db774250f069328c,
@@ -9035,10 +9379,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 5505215467038677713, guid: c18fd1b99d8c35f4c9ca7c55408f1063,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 76, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1624223384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 842549606412235554, guid: c18fd1b99d8c35f4c9ca7c55408f1063,
@@ -9083,10 +9431,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 8df10b0bece7242448bb4a8723773418,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1629165618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 8df10b0bece7242448bb4a8723773418,
@@ -9131,10 +9483,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: 149adf87d3d9d3f428021bb8f64fd133,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1639350085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: 149adf87d3d9d3f428021bb8f64fd133,
@@ -9346,7 +9702,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &1677781017 stripped
 Transform:
@@ -9392,10 +9752,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: -8357814306484431789, guid: e536837b20941ab44b5fbcc6f5a8f686,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1711830818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 551395030171389752, guid: e536837b20941ab44b5fbcc6f5a8f686,
@@ -9698,10 +10062,14 @@ MonoBehaviour:
   objectToSpawn: {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b,
     type: 3}
   toolTipDisplayText: {fileID: 1774682249}
-  spawnPosition: {x: 0, y: 46, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
   newPartSpawned: 0
   createPart: {fileID: 8300000, guid: 2b64203146610e0418209e40430afbe1, type: 3}
   audioOutput: {fileID: 0}
+  playPauseController: {fileID: 1039508700}
+  xRange: daffffff2a000000
+  yRange: 120000005a000000
+  partSize: 0.5
 --- !u!4 &1794775080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6862261035132135965, guid: b8404b4b5c1235f45bd1af29697aff3b,
@@ -10413,7 +10781,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &1891332031 stripped
 Transform:
@@ -10938,7 +11310,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7599689859464354198, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: -5288705191216568675, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 5313711161887474431, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
+    - {fileID: 8584420114199211100, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8404b4b5c1235f45bd1af29697aff3b, type: 3}
 --- !u!4 &2052569842 stripped
 Transform:

@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d8f1accd7358c334da5d6e9085255941, type: 2}
+  - {fileID: 2100000, guid: 8c95ccc144031be42a5d498c88b1a2ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -189,3 +189,4 @@ MonoBehaviour:
   impact: {fileID: 8300000, guid: 566da242bea630f4fa7ca374483be523, type: 3}
   audioOutput: {fileID: 0}
   isRolling: 0
+  playing: 0

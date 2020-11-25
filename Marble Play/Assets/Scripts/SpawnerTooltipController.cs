@@ -32,12 +32,12 @@ public class SpawnerTooltipController : MonoBehaviour, IPointerEnterHandler, IPo
     public void OnPointerEnter(PointerEventData eventData)
     {
         toolTipDisplayText.text = toolTipText;
-        Debug.Log("display tip");
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         toolTipDisplayText.text = null;
-        Debug.Log("hide tip");
+        
     }
 }

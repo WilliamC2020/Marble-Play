@@ -33,7 +33,7 @@ public class MarbleAudio : MonoBehaviour
             
         
         } */
-        Debug.Log(playing);
+       
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -43,7 +43,7 @@ public class MarbleAudio : MonoBehaviour
             isRolling = false;
        
             audioOutput.loop = false;
-            Debug.Log("bam");
+
             StartCoroutine("Play");
         }
         
@@ -60,7 +60,7 @@ public class MarbleAudio : MonoBehaviour
     {
         isRolling = false; 
         
-        Debug.Log("silent");
+
     }
      public IEnumerator Play()
     {

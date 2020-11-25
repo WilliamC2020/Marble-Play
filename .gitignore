@@ -19,6 +19,7 @@
 /Marble Play/[Tt]emp/ 
 /Marble Play/[Ll]ibrary/ 
 /Marble Play/[Oo]bj/ 
+/Marble Play/[Ll]ibrary/PlayerDataCache
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -93,3 +94,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+*.dll
+/*.Marble Play/Library/PlayerDataCache/

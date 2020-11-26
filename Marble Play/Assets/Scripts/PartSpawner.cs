@@ -16,39 +16,40 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public AudioSource audioOutput; // The audio source to play the createPart clip through.
     public int[] xRange = new int[2]; // Two-item array of int variables specifying the possible range of x positions for a new part.
     public int[] yRange = new int[2]; // Two-item array of int variables specifying the possible range of y positions for a new part .
-    public float partSize; //The size of the spherecast used to detect if the location for the part is already occupied
+    public float partSize; //The size of the spherecast used to detect if the location for the part is already occupied.
 
     void Start()
     {
-         
-        audioOutput = FindObjectOfType<AudioSource>(); // find the AudioSource to use
-        audioOutput.clip = createPart; // set the AudioSource's clip to the clip in createPart
+        
+        audioOutput = FindObjectOfType<AudioSource>(); // Find the AudioSource to play sound through.
+        audioOutput.clip = createPart; // Set the AudioSource's clip to the clip in createPart.
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData) //Start the spawn location checking process, set the pointer down & play the sound.
     {
         Debug.Log("pointer down");
-        pointerDown = true;
-        StartCoroutine("SpawnCheck");
-        audioOutput.Stop();
-        audioOutput.Play();
+        pointerDown = true; // Set the pointer down.
+        StartCoroutine("SpawnCheck"); //Start the spawn location checking process.
+        audioOutput.Stop(); //Silence any other sounds playing on the audio source.
+        audioOutput.Play(); //Play the sound through the audio source.
 
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData) 
     {
         Debug.Log("pointer up");
-        pointerDown = false;
+        pointerDown = false; // Set the pointer up.
         
     }
+
     public IEnumerator SpawnCheck()
     {
         Debug.Log("check spawn");
-        Debug.ClearDeveloperConsole(); //this clears debug messages so that when it crashes the last message seen 
-        spawnPosition.x = Random.Range(xRange[0] - 1, xRange[1] + 1);
+        Debug.ClearDeveloperConsole(); // Debug.ClearDeveloperConsole() clears debug messages so that when it crashes the last message seen will be the one it crashed on.
+        spawnPosition.x = Random.Range(xRange[0] - 1, xRange[1] + 1); // Picks a random x position within the specified range.
         Debug.Log("check spawn1");
         Debug.ClearDeveloperConsole();
-        spawnPosition.y = Random.Range(yRange[0] - 1, yRange[1] + 1);
+        spawnPosition.y = Random.Range(yRange[0] - 1, yRange[1] + 1); // Picks a random y position within the specified range.
         Debug.Log("check spawn2");
         Debug.ClearDeveloperConsole();
         Debug.Log(spawnPosition.x);
@@ -57,11 +58,11 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Debug.Log(spawnPosition.y);
         Debug.Log("check spawn4");
         Debug.ClearDeveloperConsole();
-        Collider[] hitColliders = Physics.OverlapSphere(spawnPosition, partSize);
+        Collider[] hitColliders = Physics.OverlapSphere(spawnPosition, partSize); //do a spherecast of radius partSize at the tentative location spawnPosition and return an array of everything touching it.
         Debug.Log("check spawn5");
         Debug.ClearDeveloperConsole();
         
-        if (hitColliders.Length == 0)
+        if (hitColliders.Length == 0) // The spawning routine fails if there are no parts already in the scene and no colliders are picked up - if this is so, spawn a part to rectif this
         {
 
             StartCoroutine("Spawn");
@@ -70,18 +71,21 @@ public class PartSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         foreach (var item in hitColliders)
         {
             Debug.Log("check spawn6");
-            if (item.tag == "Lock@SimStart")
+            if (item.tag != "Lock@SimStart")
             {
+                StartCoroutine("Spawn");
+                 yield break;  
+            }
 
+            else if (item.tag == "Lock@SimStart")
+            {
                 StartCoroutine("SpawnCheck");
                 Debug.Log("fail to place");
             }
-            else
-            {
-               
-                StartCoroutine("Spawn");
-
-            }
+            
+                
+                
+            
             
         }
         

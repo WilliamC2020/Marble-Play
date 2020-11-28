@@ -1,10 +1,8 @@
 {
   "dependencies": {
-    "com.havok.physics": "0.1.1-preview",
     "com.liminal.sdk": "https://github.com/LiminalVR/Liminal-SDK-Unity-Package.git",
     "com.unity.analytics": "3.3.5",
     "com.unity.burst": "1.4.1",
-    "com.unity.collab-proxy": "1.2.16",
     "com.unity.collections": "0.1.1-preview",
     "com.unity.mathematics": "1.2.1",
     "com.unity.package-manager-ui": "2.1.2",

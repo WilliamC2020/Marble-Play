@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Liminal\MyExperienceApp.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Bin.cs" />
     <Compile Include="Assets\Scripts\ClickableButton.cs" />
     <Compile Include="Assets\Scripts\Colorizer.cs" />
@@ -140,38 +139,14 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Havok.Physics">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Havok.Physics.dll</HintPath>
-    </Reference>
-    <Reference Include="Havok.Physics.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Havok.Physics.Hybrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Havok.Physics.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Havok.Physics.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Entities.Properties">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
-    </Reference>
     <Reference Include="Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities.StaticTypeRegistry">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
@@ -185,38 +160,14 @@
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Scenes.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Scenes.Hybrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Scenes.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Scenes.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Platform">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Physics">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Physics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics.Extensions">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Mathematics.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Extensions.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Physics.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Physics.Hybrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities.BuildUtils">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.BuildUtils.dll</HintPath>
     </Reference>
     <Reference Include="Oculus.VR.Editor">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Oculus.VR.Editor.dll</HintPath>
@@ -227,32 +178,14 @@
     <Reference Include="External">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/External.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Entities.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Properties">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Physics.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Physics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Examples">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Examples.dll</HintPath>
     </Reference>
     <Reference Include="LiminalSdk">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/LiminalSdk.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Editor">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Oculus.VR">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Oculus.VR.dll</HintPath>
@@ -280,9 +213,6 @@
     </Reference>
     <Reference Include="SteamVR_Windows_EditorHelper">
       <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/SteamVR_Windows_EditorHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>C:/Users/Me/Documents/GitHub/Marble-Play/Marble Play/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

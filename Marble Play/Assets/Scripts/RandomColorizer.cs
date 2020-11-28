@@ -10,7 +10,7 @@ public class RandomColorizer : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         var rend = other.gameObject.GetComponent<MeshRenderer>();
-        if (rend.gameObject.CompareTag("Marble") == true)
+        if (rend.gameObject.layer == 8)
         {
             rend.material = recolorMaterials[Random.Range(-1, recolorMaterials.Count)];
         }

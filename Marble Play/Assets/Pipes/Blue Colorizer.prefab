@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e0a7531ccdf27e4f8529ddea5448eef, type: 2}
+  - {fileID: 2100000, guid: 879e37afc3e5c0c4e9d5fb0847625aa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c0a6603339de947849b41024af91c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recolorMaterial: {fileID: 2100000, guid: 6e0a7531ccdf27e4f8529ddea5448eef, type: 2}
+  recolorMaterial: {fileID: 2100000, guid: 879e37afc3e5c0c4e9d5fb0847625aa1, type: 2}
   note: {fileID: 8300000, guid: e1b4aa589b96c4f41afa34ff8e45412e, type: 3}
 --- !u!65 &-703275843164204034
 BoxCollider:

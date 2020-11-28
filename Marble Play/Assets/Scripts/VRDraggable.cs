@@ -116,14 +116,10 @@ public class VRDraggable : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
                 if ((int)currentRotateType == 0)
                 {
+                    Debug.Log("poop");
                     rot += 90;
-                }
-                else if ((int)currentRotateType == 1)
-                {
-                    rot += 0;
-                }
-
-                if (flipRotateAxis == true)
+                
+                    if (flipRotateAxis == true)
                 {
                     gameObject.transform.rotation = Quaternion.Euler(rot, 90, transform.rotation.z);
                 }
@@ -131,6 +127,14 @@ public class VRDraggable : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 {
                     gameObject.transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rot);
                 }
+
+                }
+                else if ((int)currentRotateType == 1)
+                {
+                    
+                }
+
+               
 
 
 
